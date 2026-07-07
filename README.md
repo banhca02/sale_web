@@ -30,7 +30,7 @@ Hệ thống đã hiện thực hóa trọn vẹn các yêu cầu cốt lõi (Co
 | :--- | :--- |
 | **Backend** | Python 3.10+, FastAPI, SQLAlchemy, Pydantic, Uvicorn, PostgreSQL |
 | **Frontend** | ReactJS, Vite, Tailwind CSS v4, Axios, Recharts, Lucide React, React Router v6 |
-| **Hỗ trợ** | Cursor, Gemini AI (Tuân thủ theo `AI_USAGE.md`) |
+| **Hỗ trợ** | Gemini  |
 
 ---
 
