@@ -14,7 +14,7 @@ Hệ thống đã hiện thực hóa trọn vẹn các yêu cầu cốt lõi (Co
 - **Chốt Chặn Bảo Mật Giao Diện (AdminRoute & ProtectedRoute)**: Ngăn chặn tuyệt đối nhân viên Sale cố tình truy cập thủ công vào trang quản trị của Admin thông qua URL.
 
 ### 2. Phân Hệ Admin (Quản Trị Hệ Thống)
-- **Cấp Tài Khoản Sale**: Form đăng ký lồng dữ liệu phức tạp (`Nested Object Schema`), tự động khởi tạo chỉ tiêu doanh thu (`target_revenue`) riêng biệt cho từng nhân viên.
+- **Cấp Tài Khoản Sale**: Form đăng ký lồng dữ liệu (`Nested Object Schema`), khởi tạo chỉ tiêu doanh thu (`target_revenue`) riêng biệt cho từng nhân viên.
 - **Giám Sát Đội Ngũ**: Bảng theo dõi toàn bộ nhân viên Sale đang hoạt động kèm theo KPI thực tế được đồng bộ qua câu lệnh truy vấn nạp sớm `joinedload` tối ưu.
 
 ### 3. Phân Hệ Sale & Đại Lý
