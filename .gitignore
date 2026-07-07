@@ -1,0 +1,15 @@
+# Backend virtual environment
+sale_backend/.venv/
+sale_backend/venv/
+sale_backend/env/
+sale_backend/__pycache__/
+sale_backend/.env
+
+# Frontend dependencies & build
+sale_frontend/node_modules/
+sale_frontend/dist/
+sale_frontend/.env.local
+
+# OS files
+.DS_Store
+Thumbs.db
