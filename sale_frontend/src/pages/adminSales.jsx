@@ -45,7 +45,7 @@ function AdminSales() {
         status: "Đang làm",            
         password: formData.password
       },
-      target_revenue: parseFloat(formData.target_revenue) || 0 // Ép kiểu số thực/số nguyên
+      target_revenue: parseFloat(formData.target_revenue) || 0
     };
     try {
       await axiosClient.post('/', payload);
@@ -61,7 +61,7 @@ function AdminSales() {
 
   const handleLogout = async () => {
     try {
-      await axiosClient.post('/auth/logout');
+      await axiosClient.post('/logout');
     } finally {
       logout();
       navigate('/login');
@@ -134,6 +134,28 @@ function AdminSales() {
                 />
               </div>
 
+              <div className="grid grid-cols-2 gap-4">
+                <div>
+                  <label className="block text-xs font-bold text-slate-700 mb-1">Số điện thoại</label>
+                  <input
+                    type="text" placeholder="0912xxxxxx"
+                    className="w-full px-3 py-2 text-sm border border-slate-300 rounded-xl focus:outline-hidden focus:ring-2 focus:ring-indigo-500"
+                    value={formData.phone} 
+                    onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+                  />
+                </div>
+
+                <div>
+                  <label className="block text-xs font-bold text-slate-700 mb-1">KPI Doanh thu (đ) </label>
+                  <input
+                    type="number" placeholder="Nhập số tiền KPI"
+                    className="w-full px-3 py-2 text-sm border border-slate-300 rounded-xl focus:outline-hidden focus:ring-2 focus:ring-indigo-500"
+                    value={formData.target_revenue} 
+                    onChange={(e) => setFormData({ ...formData, target_revenue: e.target.value })}
+                  />
+                </div>
+              </div>
+
               <div>
                 <label className="block text-xs font-bold text-slate-700 mb-1">Mật khẩu khởi tạo *</label>
                 <input
@@ -178,7 +200,6 @@ function AdminSales() {
                       <td className="p-4 font-semibold text-slate-900">{sale.user.full_name}</td>
                       <td className="p-4 text-slate-500">{sale.user.email}</td>
                       <td className="p-4 text-slate-500">
-                        {/* Hiển thị thêm số KPI doanh thu cho oai */}
                         {sale.target_revenue.toLocaleString('vi-VN')} đ
                       </td>
                       <td className="p-4 text-center">

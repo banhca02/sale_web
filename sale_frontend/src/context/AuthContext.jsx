@@ -32,6 +32,7 @@ export const AuthProvider = ({ children }) => {
   }, [isAuthenticated]);
 
   const login = () => {
+    setLoading(true);
     setIsAuthenticated(true);
     localStorage.setItem('isLogged', 'true'); 
   };
