@@ -10,7 +10,7 @@ Hệ thống đã hiện thực hóa trọn vẹn các yêu cầu cốt lõi (Co
 
 ### 1. Phân Hệ Xác Thực & Phân Quyền (Auth & ACL)
 - **HttpOnly Cookie Authentication**: Cơ chế đăng nhập an toàn, chống tấn công XSS bằng cách lưu trữ Token bảo mật trực tiếp trong HttpOnly Cookie phía Backend.
-- **Mô Hình Bảng Con Độc Lập (One-to-One)**: Phân quyền động tại API `/auth/me` dựa trên hồ sơ liên kết (`admin_profile` / `sale_profile`), giả lập chuỗi vai trò (`role`) trả về cho Client.
+- **Mô Hình Bảng Con Độc Lập (One-to-One)**: Phân quyền động tại API `/me` dựa trên hồ sơ liên kết (`admin_profile` / `sale_profile`), giả lập chuỗi vai trò (`role`) trả về cho Client.
 - **Chốt Chặn Bảo Mật Giao Diện (AdminRoute & ProtectedRoute)**: Ngăn chặn tuyệt đối nhân viên Sale cố tình truy cập thủ công vào trang quản trị của Admin thông qua URL.
 
 ### 2. Phân Hệ Admin (Quản Trị Hệ Thống)
@@ -30,7 +30,7 @@ Hệ thống đã hiện thực hóa trọn vẹn các yêu cầu cốt lõi (Co
 | :--- | :--- |
 | **Backend** | Python 3.10+, FastAPI, SQLAlchemy, Pydantic, Uvicorn, PostgreSQL |
 | **Frontend** | ReactJS, Vite, Tailwind CSS v4, Axios, Recharts, Lucide React, React Router v6 |
-| **Hỗ trợ** | Cursor, Gemini AI (Tuân thủ theo `AI_USAGE.md`) |
+| **Hỗ trợ** | Gemini  |
 
 ---
 
