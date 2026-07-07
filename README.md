@@ -90,4 +90,4 @@ npm run dev
 
 ## Demo
 
-[![Watch the demo](https://www.youtube.com/watch?v=bhFD5taSATc/maxresdefault.jpg)](https://www.youtube.com/watch?v=bhFD5taSATc)
+[![Watch the demo](https://img.youtube.com/vi/bhFD5taSATc/hqdefault.jpg)](https://www.youtube.com/watch?v=bhFD5taSATc)
